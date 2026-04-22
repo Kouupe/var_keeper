@@ -1,4 +1,5 @@
-name: Unit Tests
+
+сname: Unit Tests
 run-name: Run Unit Tests
 on:
   push:
@@ -14,3 +15,5 @@ jobs:
         run: |
           chmod +x ./test/unit-tests.sh
           ./test/unit-tests.sh
+      - name: Checkout
+        uses: actions/checkout@v6
